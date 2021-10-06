@@ -10,9 +10,9 @@ paragraph1 = doc.paragraphs[0].text
 # Creates list of all bytes
 bytesList = paragraph1.split(" ")
 
+
 # Converting bytes from hexadecimal to decimal
 convertedBytes = []  # creates empty list of converted bytes
-
 for i in range(len(bytesList)):
     byte = int(bytesList[i], 16)  # converts the bytes to decimal from hexadecimal (base 16)
     convertedBytes.append(byte)
@@ -22,10 +22,10 @@ for i in range(len(bytesList)):
 destinationMACAddress = []
 for x in range(6):
     destinationMACAddress.append(bytesList[x])
-
 sourceMACAddress = []
 for y in range(6, 12):
     sourceMACAddress.append(bytesList[y])
+
 
 # Interpreting IP, ethernet type, and IP protocol header
 typeBytes = []
