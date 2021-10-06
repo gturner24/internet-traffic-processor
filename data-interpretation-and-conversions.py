@@ -27,7 +27,7 @@ for y in range(6, 12):
     sourceMACAddress.append(bytesList[y])
 
 
-# Interpreting IP, ethernet type, and IP protocol header
+# Interpreting Ethernet Type
 typeBytes = []
 for z in range(12, 14):
     typeBytes.append(bytesList[z])
