@@ -4,12 +4,12 @@
 import docx
 
 # Reading document containing bytes
-doc = docx.Document("hexFile.docx")
-paragraph1 = doc.paragraphs[0].text
+with open('1st_File.txt') as textFile:
+    doc = textFile.read()
+
 
 # Creates list of all bytes
-bytesList = paragraph1.split(" ")
-
+bytesList = doc.split(" ")
 
 # Converting bytes from hexadecimal to decimal
 convertedBytes = []  # creates empty list of converted bytes
